@@ -17,7 +17,7 @@ body {
   color: #1b1308;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  cursor: none; /* скрываем системный курсор */
+  cursor: none; 
 }
 
 img {
@@ -553,7 +553,7 @@ button,
 
 @media (max-width: 720px) {
   body {
-    cursor: auto; /* на совсем маленьких — обычный курсор, чтобы избежать лагов */
+    cursor: auto; 
   }
 
   .custom-cursor {

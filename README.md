@@ -13,7 +13,7 @@
 
 ## 🛠 Технологический стек
 * **Frontend**: HTML5, CSS3 (Modern Grid/Flexbox), JavaScript.
-* **Design**: Figma, Framer.
+* **Design**: Figma.
 * **AI Tools**: v0.dev, Cursor (AI Code Editor).
 * **Deploy**: Vercel.
 

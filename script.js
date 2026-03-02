@@ -37,7 +37,6 @@ if (cursor) {
   });
 }
 
-// простые анимации появления секций при скролле
 const fadeSections = document.querySelectorAll(".fade-section");
 
 if (fadeSections.length && "IntersectionObserver" in window) {
@@ -57,7 +56,6 @@ if (fadeSections.length && "IntersectionObserver" in window) {
 
   fadeSections.forEach((section) => observer.observe(section));
 } else {
-  // fallback — если нет IntersectionObserver, показываем всё сразу
   fadeSections.forEach((section) => section.classList.add("is-visible"));
 }
 

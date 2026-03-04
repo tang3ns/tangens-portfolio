@@ -382,6 +382,19 @@ section {
   justify-content: flex-start;
 }
 
+.device-screen--with-image {
+  padding: 0;
+  background: #060709;
+  overflow: hidden;
+}
+
+.device-screen--with-image .device-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 .device-content {
   color: #faefd9;
 }

@@ -463,7 +463,9 @@ section {
 .device-browser-body {
   flex: 1;
   overflow: hidden;
-  background: #000;
+  background:
+    radial-gradient(circle at 50% 120%, #f4e4c5 0, #050608 60%),
+    #050608;
 }
 
 .device-content {

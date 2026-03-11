@@ -394,10 +394,28 @@ section {
 
 .device-screen--with-image .device-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
   object-fit: contain;
   object-position: center;
+}
+
+/* отдельная настройка для первого кейса:
+   высота блока подстраивается под изображение,
+   картинка не обрезается и во всю ширину */
+.case-desktop .device-macbook {
+  aspect-ratio: auto;
+}
+
+.case-desktop .device-screen {
+  padding: 0;
+  background: transparent;
+  height: auto;
+}
+
+.case-desktop .device-screen--with-image {
+  padding: 0;
+  background: transparent;
 }
 
 .device-content {

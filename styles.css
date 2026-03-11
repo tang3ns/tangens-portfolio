@@ -373,6 +373,12 @@ section {
   box-shadow: 0 24px 45px rgba(0, 0, 0, 0.5);
 }
 
+/* кейс с NeuroNest — браузер во всю тёмную плашку */
+.case-desktop .device {
+  padding: 0;
+  background: transparent;
+}
+
 .device-screen {
   border-radius: 18px;
   background: radial-gradient(circle at 0 0, #daa63e, #7c5131);

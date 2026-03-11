@@ -348,6 +348,15 @@ section {
   align-items: stretch;
 }
 
+.case-desktop {
+  grid-column: 1 / -1;
+}
+
+.case-desktop .device {
+  max-width: 880px;
+  margin-inline: auto;
+}
+
 .case-card {
   display: grid;
   grid-template-rows: auto 1fr;

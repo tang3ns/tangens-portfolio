@@ -397,7 +397,67 @@ section {
   height: 100%;
   display: block;
   object-fit: contain;
-  object-position: center;
+  object-position: top center;
+}
+
+.device-browser {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: inherit;
+  overflow: hidden;
+  background: #151515;
+}
+
+.device-browser-chrome {
+  height: 32px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(to bottom, #2a2a2f, #202025);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.device-browser-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.device-browser-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #ff5f57;
+}
+
+.device-browser-dots span:nth-child(2) {
+  background: #febc2e;
+}
+
+.device-browser-dots span:nth-child(3) {
+  background: #28c840;
+}
+
+.device-browser-tab {
+  flex: 0 0 96px;
+  height: 18px;
+  border-radius: 6px 6px 0 0;
+  background: radial-gradient(circle at 50% 0%, #3b3b42, #26262c);
+}
+
+.device-browser-url {
+  flex: 1;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(250, 239, 217, 0.12);
+}
+
+.device-browser-body {
+  flex: 1;
+  overflow: hidden;
+  background: #000;
 }
 
 .device-content {

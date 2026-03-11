@@ -402,7 +402,7 @@ section {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top center;
 }
 
@@ -463,9 +463,7 @@ section {
 .device-browser-body {
   flex: 1;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 120%, #f4e4c5 0, #050608 60%),
-    #050608;
+  background: #050608;
 }
 
 .device-content {

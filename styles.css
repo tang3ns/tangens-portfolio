@@ -380,12 +380,16 @@ section {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  width: 100%;
+  height: 100%;
 }
 
 .device-screen--with-image {
   padding: 0;
   background: #060709;
   overflow: hidden;
+  display: block;
+  border-radius: 18px;
 }
 
 .device-screen--with-image .device-image {

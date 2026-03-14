@@ -651,33 +651,48 @@ button,
   }
 }
 
+
 .case-mobile {
-  position: relative;
-  overflow: hidden; 
-  padding: 0 !important; 
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .case-mobile .device-iphone {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  border: none; 
+  max-width: 320px; 
+  margin: 0 auto; 
+  border: 14px solid #1a1a1a; 
+  border-radius: 36px;
+  background-color: #1a1a1a;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+  overflow: hidden; 
+  
+  display: flex;
+  flex-direction: column;
 }
 
-.case-mobile .device-screen {
-  width: 100%;
-  height: 100%;
-  border-radius: 0; 
+.case-mobile .device-screen--with-image {
+  flex-grow: 1; 
+  padding: 0; 
+  display: flex;
 }
 
 .case-mobile .device-image {
   width: 100%;
-  height: 100%;
+  height: 100%; 
+  
   object-fit: cover; 
+  
   object-position: top; 
+  
   display: block;
 }
 
-.case-mobile .device-content {
-  display: none; 
+.case-mobile .case-meta {
+  padding: 20px;
+  margin-top: -10px; 
+  background-color: inherit; 
+  border-radius: 0 0 24px 24px; 
 }

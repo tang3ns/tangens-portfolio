@@ -409,9 +409,7 @@ section {
   object-position: center;
 }
 
-/* отдельная настройка для первого кейса:
-   высота блока подстраивается под изображение,
-   картинка не обрезается и во всю ширину */
+
 .case-desktop .device-macbook {
   aspect-ratio: auto;
 }

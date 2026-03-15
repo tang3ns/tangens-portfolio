@@ -343,40 +343,8 @@ section {
   margin-bottom: 10px;
 }
 
-.cases-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 24px;
-}
 
-@media (min-width: 721px) {
-  .cases-grid {
-    grid-auto-rows: 1fr;
-  }
-}
 
-.case-desktop {
-  grid-column: 1 / -1;
-}
-
-.case-desktop .device {
-  max-width: 880px;
-  margin-inline: auto;
-}
-
-.case-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 16px;
-}
-
-.case-card .device {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
 
 .case-meta {
   margin-top: auto;
@@ -393,62 +361,6 @@ section {
   color: rgba(27, 19, 8, 0.78);
 }
 
-.device {
-  position: relative;
-  border-radius: 24px;
-  background: transparent;
-  padding: 0;
-  box-shadow: none;
-}
-
-.case-desktop .device {
-  background: linear-gradient(135deg, #2c241b, #1b1308);
-  padding: 12px;
-  box-shadow: 0 24px 45px rgba(0, 0, 0, 0.5);
-}
-
-.device-screen {
-  border-radius: 18px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  flex: 1;
-}
-
-.device-screen--with-image {
-  padding: 0;
-  background: transparent;
-  overflow: hidden;
-  display: flex;
-  border-radius: 18px;
-}
-
-.device-screen--with-image .device-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  object-position: top center;
-}
-
-
-.case-desktop .device-macbook {
-  aspect-ratio: 16 / 10;
-}
-
-.case-desktop .device-screen {
-  padding: 0;
-  background: transparent;
-}
-
-.case-desktop .device-screen--with-image {
-  padding: 0;
-  background: transparent;
-}
 
 .device-content {
   color: #faefd9;
@@ -676,15 +588,37 @@ button,
   }
 }
 
-.case-mobile-phone .mockup-wrapper {
-  width: 100%;
-  text-align: center; 
+.cases-standalone {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.case-mobile-phone .full-mockup-img {
+.case-clean {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-image-wrapper {
   width: 100%;
-  max-width: 900px; 
-  height: 400px; 
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(27, 19, 8, 0.1); 
+  border: 1px solid rgba(218, 166, 62, 0.2);
+}
+
+.case-img-flat {
+  width: 100%;
+  height: auto;
   display: block;
-  margin: 0 auto;
+  transition: transform 0.5s ease;
+}
+
+.case-image-wrapper:hover .case-img-flat {
+  transform: scale(1.02);
+}
+
+#cases.section {
+  padding: 60px 0; 
 }

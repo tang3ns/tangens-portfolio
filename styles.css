@@ -344,8 +344,15 @@ section {
 }
 
 .cases-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
+  gap: 24px;
+}
+
+@media (min-width: 721px) {
+  .cases-grid {
+    grid-auto-rows: 1fr;
+  }
 }
 
 .case-desktop {
@@ -358,9 +365,21 @@ section {
 }
 
 .case-card {
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   gap: 16px;
+}
+
+.case-card .device {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.case-meta {
+  margin-top: auto;
 }
 
 .case-meta h3 {
@@ -377,6 +396,12 @@ section {
 .device {
   position: relative;
   border-radius: 24px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.case-desktop .device {
   background: linear-gradient(135deg, #2c241b, #1b1308);
   padding: 12px;
   box-shadow: 0 24px 45px rgba(0, 0, 0, 0.5);
@@ -384,20 +409,21 @@ section {
 
 .device-screen {
   border-radius: 18px;
-  background: radial-gradient(circle at 0 0, #daa63e, #7c5131);
-  padding: 16px;
+  padding: 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  flex: 1;
 }
 
 .device-screen--with-image {
-  padding: 10px;
-  background: #050608;
+  padding: 0;
+  background: transparent;
   overflow: hidden;
-  display: block;
+  display: flex;
   border-radius: 18px;
 }
 
@@ -406,18 +432,17 @@ section {
   height: auto;
   display: block;
   object-fit: contain;
-  object-position: center;
+  object-position: top center;
 }
 
 
 .case-desktop .device-macbook {
-  aspect-ratio: auto;
+  aspect-ratio: 16 / 10;
 }
 
 .case-desktop .device-screen {
   padding: 0;
   background: transparent;
-  height: auto;
 }
 
 .case-desktop .device-screen--with-image {

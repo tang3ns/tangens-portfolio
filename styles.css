@@ -382,6 +382,7 @@ section {
   font-size: 0.9rem;
   transition: border-color 0.18s ease-out, background-color 0.18s ease-out,
     transform 0.16s ease-out;
+  gap: 16px;
 }
 
 .contact-link:hover {

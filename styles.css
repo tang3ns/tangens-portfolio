@@ -541,7 +541,43 @@ button,
     gap: 10px;
     text-align: center;
   }
+
+  .nav {
+    display: none; 
+  }
+
+  .logo {
+    font-size: 0.9rem; 
+  }
+
+  .header-inner {
+    justify-content: center; 
+    padding-block: 10px;
+  }
+
+  .contacts-text h2 {
+    font-size: 2rem; 
+    word-break: break-word; 
+  }
+
+  .contacts {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+
+  .contacts-links {
+    grid-template-columns: 1fr; 
+    width: 100%;
+    margin: 0 auto;
+    max-width: 320px; 
+  }
+
+  .contact-link {
+    width: 100%;
+    justify-content: center; 
+  }
 }
+
 
 .cases-standalone {
   display: block;

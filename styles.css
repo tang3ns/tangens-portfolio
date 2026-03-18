@@ -484,32 +484,37 @@ button,
     cursor: auto; 
   }
 
+  html, body {
+    overflow-x: hidden; 
+    width: 100%;
+    position: relative;
+  }
+
   .custom-cursor {
     display: none;
   }
 
-  /* Скрываем лишние блоки на мобилках */
   .mobile-hide {
     display: none;
   }
 
   .hero {
-    padding-top: 60px; /* Уменьшили отступ сверху */
+    padding-top: 60px; 
     padding-bottom: 40px;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    text-align: left; /* Оставляем выравнивание по левому краю */
+    text-align: left; 
   }
 
   .hero-copy h1 {
-    font-size: 2.2rem; /* Сделали заголовок чуть меньше, чтобы не ломался */
+    font-size: 2.2rem; 
     line-height: 1.1;
   }
 
   .hero-actions {
-    flex-direction: column; /* Кнопки друг под другом для удобства нажатия */
+    flex-direction: column; 
     width: 100%;
   }
 
